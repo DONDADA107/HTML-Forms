@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        body{
+            background-color: rgb(129, 131, 131); 
+            background-image: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-position: center;
+            background-size: cover;
+            max-height: 650px;
+        }
+        body #test-one{
+            width: 600px;
+            height: auto;
+            background-color: bisque;
+            border: solid;
+            margin: 5pc auto;
+            border-radius: 20px;
+
+        }
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color: red;
+        }
+        p{
+            font-size: 20px;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+        form{
+            font-family: 'Courier New', Courier, monospace;
+            padding: 20px;
+            font-size: 18px;
+        }
+        input{
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            border-color: black solid;
+        }
+        input[type='text'],input[type='tel']{
+            width: 400px;
+        }
+        input[type='email']{
+            width: 400px;
+        }
+        label[for='email']{
+            padding-right: 78px;
+        }
+        ::placeholder{
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<div id="test-one">
+    <h1>THIS IS MY TEST PAGE</h1>
+    <ul>
+    <li><p>I began working on this website a very long time ago.</p></li>
+    <li><p>I would like to create a form on this page using the techniques learnt before.</p></li>
+    <li><p>This form will only request for a few items from you.</p></li>
+    </ul>
+
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name here">
+        <br>
+        <label for>Age</label>
+        <input type="radio" id="age" name="age" value="18-20">
+        <label for="18-20">18-20</label>
+        <input type="radio" id="age" name="age" value="21-30">
+        <label for="21-30">21-30</label>
+        <input type="radio" id="age" name="age" value="31-40">
+        <label for="31-40">31-40</label>
+        <input type="radio" id="age" name="age" value="Above 40">
+        <label for="Above 40">Above 40</label>
+        <br>
+        <label>Which Books Are you Interested in?</label>
+        <br>
+        <input type="checkbox" id="harry-porter" name="harry-porter" value="harry-porter">
+        <label for="harry-porter">The Harry Porter Series</label>
+        <br>
+        <input type="checkbox" id="spartacus" name="spartacus" value="spartacus">
+        <label for="spartacus">The Spartacus Series</label>
+        <br>
+        <input type="checkbox" id="witch-hunter" name="witch-hunter" value="witch-hunter">
+        <label for="witch-hunter">The Witch Hunter Series</label>
+        <br>
+        <input type="checkbox" id="game-of-thrones" name="game-of-thrones" value="game-of-thrones">
+        <label for="game-of-thrones">The Game of Thrones Series</label>
+        <br>
+        <p>Enter your email and phone number below.</p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address here">
+        <br>
+        <label for="telephone-number">Phone Number</label>
+        <input type="tel" id="telephone-number" name="telephone-number" placeholder="Enter your phone number here">
+    </form>
+
+</div>
+</body>
